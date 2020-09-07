@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0em;
+}
+
+.searchBox {
+    padding-top: 4em;
+}
+
+.searchBox form {
+    position: relative;
+    width: 46em;
+    margin: 0 auto;
+    filter: brightness(100%);
+}
+
+.searchBox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2.9em);
+    height: 2.3em;
+    padding-left: 10px;
+    border: 0.1em solid #EBECED;
+    border-radius: 0.3em;
+    outline: none;
+    background: #FFFFFF;
+    color: #3F4146;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 400%;
+}
+
+.icon-search {
+    color: #FFFFFF;
+}
+
+.bannerTopButton {
+    position: absolute; 
+    top: 0.1em;
+    right: 0;
+    width: 2.7em;
+    height: 2.7em;
+    border: none;
+    background: #572F59;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.bannerTopButton:hover {
+    filter: brightness(150%);
+}
+
+.brightnessFilter {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(80%);
+}
+
+.brightnessFilterTop {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(60%);
+}
+
+.wavesBottom {
+    width: 100%;
+    background: url("../Pictures/wave1.svg") bottom no-repeat, url("../Pictures/wave2.svg") bottom no-repeat, url("../Pictures/wave3.svg") bottom no-repeat;
+}
+
+.wavesBottomBannerTop {
+    width: 100%;
+    background: url("../Pictures/wave1top.svg") bottom no-repeat, url("../Pictures/wave2top.svg") bottom no-repeat, url("../Pictures/wave3top.svg") bottom no-repeat;
+}
+
+.wavesTop {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wavesTop::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../Pictures/wave1.svg") bottom no-repeat, url("../Pictures/wave2.svg") bottom no-repeat, url("../Pictures/wave3.svg") bottom no-repeat;
+    transform: rotate(180deg);
+}
+
+.tagline {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    line-height: 350%;
+}
+
+.text-shadow {
+    text-shadow: 0 0 2.4em rgba(0,0,0,.5);
+}
+
+.tagline h1 {
+    text-transform: capitalize;
+    font-size: 3.8em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: -1em 0 0 0;
+    padding: 0;
+}
+
+.tagline p {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bannerTop {
+    width: 100%;
+    height: 46em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #2F82BF;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.headerNav a {
+    margin-left: 0.7em;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    height: 100px;
+    width: 73em;
+    margin: 0 auto;
+}
+
+ul.navPages {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.navPages li {
+    display: inline;
+    color: white;
+    padding: 0em 1.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.mainWidth {
+    width: 73em;
+    margin: 0 auto;
+}
+
+.bestOffers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.bestOffers h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.3em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+.bestOffers p {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #AAAAAA;
+    margin: 0;
+    padding: 0;
+}
+
+.picBestOffers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3em;
+    margin: 3em 0 3em 0;
+}
+
+.picBestOffers figure {
+    padding: 0;
+    margin: 0;
+}
+
+.picBestOffers figure img {
+    max-width: 92%;
+    border-radius: 0.3em 0.3em 0px 0px;
+    box-shadow: 0 0.4em 0.6em 0.09em rgba(0, 0, 0, 0.15);
+}
+
+.picBestOffers figcaption {
+    padding-left: 2em;
+    font-family: 'Lato', sans-serif;
+    line-height: 0.8em;
+}
+
+.picBestOffers figure p {
+    text-align: left;
+}
+
+img.cardOffer1 {
+    content:url("../Pictures/pr-1-480x271-300x169.jpg");
+}
+
+img.cardOffer2 {
+    content:url("../Pictures/pr-2-480x271-300x169.jpg");
+}
+
+img.cardOffer3 {
+    content:url("../Pictures/pr-3-480x271-300x169.jpg");
+}
+
+img.cardOffer4 {
+    content:url("../Pictures/background-39-1920x900-480x271-300x169.jpg");
+}
+
+.reasonsChoose {
+    width: 100%;
+    height: 42em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #A1715C;
+}
+
+.containerReasons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: auto;
+}
+
+.containerReasons h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.3em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.cardsReasons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    padding: 2.5em 0em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 0em 0.6em;
+    margin: 0.8em;
+    height: 11em;
+}
+
+.card1 {
+    width: 21em;
+}
+
+.card2 {
+    width: 21em;
+}
+
+.circle {
+    width: 2.1em;
+	height: 2.1em;
+    background: #CD5823;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 155%;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.93em;
+    padding: 0;
+    margin: 0;
+}
+
+.card p {
+    color: #AAAAAA;
+    text-align: center;
+    font-size: 0.82em;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18em;
+    font-family: 'Lato', sans-serif;
+    flex-wrap: wrap;
+}
+
+.achievementsCard {
+    flex-direction: column;
+    line-height: 2em;
+    width: fit-content;
+}
+
+.achievementsCard img {
+    max-width: 75%;
+    margin: 1em;
+}
+
+.achievementsCard h3 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.achievementsCard p {
+    color: #888888;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+
+.findFlight {
+    width: 100%;
+    height: 28em;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #676257;
+}
+
+.containerFindFlight {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.containerFindFlight h2 {
+    color: white;
+    font-size: 3.1em;
+    font-weight: 400;
+    width: 15.2em;
+    text-align: left;
+    line-height: 1em;
+    font-family: 'Lato', sans-serif;
+    margin: -1.5em 0 0 0;
+    padding: 0;
+}
+
+.itemCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.buttonLink {
+    position: absolute;
+    bottom: 30%;
+    width: fit-content;
+    height: 3.6em;
+    border: none;
+    background: #572F59;
+    border-radius: 1.8em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0em 3.5em;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+}
+
+.buttonLink:hover {
+    background: #CD5823;
+}
+
+@media all and (min-width: 1101px)
+{
+    div.bannerTop {background-image:url("../Pictures/header-photo-big.jpg");}
+    section.reasonsChoose {background-image:url("../Pictures/bg-121-1920x832.jpg");}
+    section.findFlight { background-image:url("../Pictures/background-09-1920x900.jpg");}
+}
+
+@media all and (max-width: 1250px) {
+    
+    
+    .searchBox form {width: 65%;}
+    .picBestOffers {padding-left: 15px;}
+    .cardsReasons { padding: 2.5em 0.8em;}
+    .card1 { width: 30%;}
+    .card2 {width: 30%;}
+}
+
+@media all and (max-width: 1180px) {
+    .mainWidth {width: 100%;}
+    .headerNav {width: 100%;}
+}
+
+@media all and (max-width: 1100px) {
+    div.bannerTop {background-image:url('../Pictures/header-photo-medium.jpg');}
+    section.reasonsChoose {background-image:url("../Pictures/bg-121-1170x650.jpg");}
+    section.findFlight { background-image:url("../Pictures/background-09-1920x900-1280x640.jpg");}
+}
+
+@media all and (max-width: 1000px) {
+    div.bannerTop { height: 32em;}
+    .cardsReasons { padding: 2.5em 0em;}
+    .card1 { width: calc(50% - 1.6em);}
+    .card2 {width: calc(100% - 1.6em);}
+    .reasonsChoose { height: 64em;}
+    .containerFindFlight {align-items: center;}
+    .containerFindFlight h2 { width: 100%; text-align: center; margin: 0;}
+    .findFlight {height: 20em;}
+    section.findFlight { background-image:url("../Pictures/background-09-1920x900-1024x480.jpg");}
+    .headerNav {width: 42em;}
+    .buttonLink {bottom: 13%;}
+}
+
+@media all and (max-width: 800px) {
+    .searchBox form {width: calc(100% - 20px);}
+    div.bannerTop { height: 44em;}
+    .searchBox {padding-top: 1em;}
+    .picBestOffers {flex-direction: column;}
+    .bestOffers figure {padding: 0.8em 0px;}
+    .bestOffers figure img {width: 30em; margin: 0 auto; display: block;}
+    figure img.cardOffer1 {content: url("../Pictures/pr-1-480x271.jpg");}
+    figure img.cardOffer2 {content: url("../Pictures/pr-2-480x271.jpg");}
+    figure img.cardOffer3 {content: url("../Pictures/pr-3-480x271.jpg");}
+    figure img.cardOffer4 {content: url("../Pictures/background-39-1920x900-480x271.jpg");}
+    .card1 { width: calc(100% - 1.6em);}
+    .card2 {width: calc(100% - 1.6em);}
+    .reasonsChoose { height: 88em;}
+    .achievementsCard { width: 50%;}
+    .achievements {height: 21em;}
+    .findFlight {height: 17em;}
+    .containerFindFlight h2 { font-size: 2em;}
+    .falseButton {margin-top: 2em;}
+    section.findFlight { background-image:url("../Pictures/background-09-1920x900-768x360.jpg");}
+    .tagline {line-height: 400%;}
+    .tagline p {line-height: 200%;}
+    .headerNav {width: 38em;}
+}
+
+@media all and (max-width: 600px) {
+    div.bannerTop {background-image:url('../Pictures/header-photo-small.jpg');}
+    section.reasonsChoose {background-image:url("../Pictures/bg-121-640x640.jpg");}
+}
+
+@media all and (max-width: 650px) {
+    ul.navPages { display: none;}
+}
+

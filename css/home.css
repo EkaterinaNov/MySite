@@ -72,7 +72,6 @@ body {
 .wavesBottom {
     width: 100%;
     background: url("../Pictures/wave1.svg") bottom no-repeat, url("../Pictures/wave2.svg") bottom no-repeat, url("../Pictures/wave3.svg") bottom no-repeat;
-    margin: -0.1em 0em;
 }
 
 .wavesBottomBannerTop {
@@ -190,7 +189,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: fit-content;
+    height: 35em;
 }
 
 .bestOffers h2 {
@@ -454,7 +453,7 @@ img.cardOffer4 {
     
     
     .searchBox form {width: 65%;}
-    .picBestOffers {padding-left: 15px;}
+    .picBestOffers {padding-left: 15px; padding-top: 2em;}
     .cardsReasons { padding: 2.5em 0.8em;}
     .card1 { width: 30%;}
     .card2 {width: 30%;}
@@ -469,6 +468,7 @@ img.cardOffer4 {
     div.bannerTop {background-image:url('../Pictures/header-photo-medium.jpg');}
     section.reasonsChoose {background-image:url("../Pictures/bg-121-1170x650.jpg");}
     section.findFlight { background-image:url("../Pictures/background-09-1920x900-1280x640.jpg");}
+    .bestOffers { height: 33em;}
 }
 
 @media all and (max-width: 1000px) {
@@ -483,13 +483,17 @@ img.cardOffer4 {
     section.findFlight { background-image:url("../Pictures/background-09-1920x900-1024x480.jpg");}
     .headerNav {width: 42em;}
     .buttonLink {bottom: 13%;}
+    .bestOffers { height: 31em;}
+    .picBestOffers {padding-top: 1.2em;}
 }
 
 @media all and (max-width: 800px) {
     .searchBox form {width: calc(100% - 20px);}
     div.bannerTop { height: 44em;}
     .searchBox {padding-top: 1em;}
+    .bestOffers { height: fit-content;}
     .picBestOffers {flex-direction: column;}
+    .picBestOffers {padding-top: 1em;}
     .bestOffers figure {padding: 0.8em 0px;}
     .bestOffers figure img {width: 30em; margin: 0 auto; display: block;}
     figure img.cardOffer1 {content: url("../Pictures/pr-1-480x271.jpg");}

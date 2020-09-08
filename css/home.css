@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap');
 
+/*general*/
 * {
     box-sizing: border-box;
 }
@@ -8,6 +9,30 @@ body {
     margin: 0em;
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.mainWidth {
+    width: 73em;
+    margin: 0 auto;
+}
+
+.itemCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*top block with image*/
+/*search form*/
 .searchBox {
     padding-top: 4em;
 }
@@ -37,10 +62,6 @@ body {
     line-height: 400%;
 }
 
-.icon-search {
-    color: #FFFFFF;
-}
-
 .bannerTopButton {
     position: absolute; 
     top: 0.1em;
@@ -51,12 +72,18 @@ body {
     background: #572F59;
     border-radius: 0.3em;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 .bannerTopButton:hover {
     filter: brightness(150%);
 }
 
+.bannerTopButton:active, .bannerTopButton:focus {
+    outline: none !important;
+}
+
+ /*decorate background image*/
 .brightnessFilter {
     width: 100%;
     height: 100%;
@@ -140,6 +167,7 @@ body {
     background-color: #2F82BF;
 }
 
+/*header with navigation*/
 header {
     width: 100%;
     position: absolute;
@@ -175,16 +203,43 @@ ul.navPages li {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-    text-decoration: inherit;
-    color: inherit;
+/*burger menu*/
+.burgerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -16em;
+    width: 16em;
+    height: 100%;
+    background: transparent;
+    z-index: 100;
+    transition: 500ms;
 }
 
-.mainWidth {
-    width: 73em;
-    margin: 0 auto;
+.burgerNav {
+    height: 100%;
+    background-color: #F1F4F6;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-transform: uppercase;
+    flex-grow: 1;
 }
 
+.burgerMenu .bannerTopButton {
+    left: -3.4em;
+    top: 0.7em;
+}
+
+.burgerNav .navPages li {
+    display: block;
+    color: #3B3D42;
+    padding: 0.5em 3.5em;
+}
+
+/*block best offers without background image*/
 .bestOffers {
     display: flex;
     flex-direction: column;
@@ -257,6 +312,8 @@ img.cardOffer4 {
     content:url("../Pictures/background-39-1920x900-480x271-300x169.jpg");
 }
 
+
+/*reasons to choose us with background image*/
 .reasonsChoose {
     width: 100%;
     height: 42em;
@@ -343,6 +400,7 @@ img.cardOffer4 {
     line-height: 1.5em;
 }
 
+/*block our achievements without backgtound image*/
 .achievements {
     display: flex;
     justify-content: space-around;
@@ -379,7 +437,7 @@ img.cardOffer4 {
     font-style: italic;
 }
 
-
+/*block find your flight with background image*/
 .findFlight {
     width: 100%;
     height: 28em;
@@ -408,18 +466,6 @@ img.cardOffer4 {
     padding: 0;
 }
 
-.itemCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentCenter {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .buttonLink {
     position: absolute;
     bottom: 30%;
@@ -442,6 +488,7 @@ img.cardOffer4 {
     background: #CD5823;
 }
 
+/**/
 @media all and (min-width: 1101px)
 {
     div.bannerTop {background-image:url("../Pictures/header-photo-big.jpg");}
@@ -453,14 +500,14 @@ img.cardOffer4 {
     
     
     .searchBox form {width: 65%;}
-    .picBestOffers {padding-left: 15px; padding-top: 2em;}
+    .picBestOffers {padding-left: 0.7em; padding-top: 2em; width: calc(100% - 0.7em);}
     .cardsReasons { padding: 2.5em 0.8em;}
     .card1 { width: 30%;}
     .card2 {width: 30%;}
 }
 
 @media all and (max-width: 1180px) {
-    .mainWidth {width: 100%;}
+    .mainWidth {width: 100%}
     .headerNav {width: 100%;}
 }
 
@@ -491,9 +538,8 @@ img.cardOffer4 {
     .searchBox form {width: calc(100% - 20px);}
     div.bannerTop { height: 44em;}
     .searchBox {padding-top: 1em;}
-    .bestOffers { height: fit-content;}
-    .picBestOffers {flex-direction: column;}
-    .picBestOffers {padding-top: 1em;}
+    .bestOffers { height: 106em;}
+    .picBestOffers {padding-top: 1em; flex-direction: column;}
     .bestOffers figure {padding: 0.8em 0px;}
     .bestOffers figure img {width: 30em; margin: 0 auto; display: block;}
     figure img.cardOffer1 {content: url("../Pictures/pr-1-480x271.jpg");}
@@ -520,6 +566,11 @@ img.cardOffer4 {
 }
 
 @media all and (max-width: 650px) {
-    ul.navPages { display: none;}
+    .headerNav ul.navPages { display: none;}
+    .burgerMenu {display: flex;}
 }
 
+@media all and (max-width: 450px) {
+    .burgerNav { background-color: #572F59;}
+    .burgerNav .navPages li { color: white; font-size: 1.5em; padding: 0.5em 1.7em; transition: 500ms;}
+}

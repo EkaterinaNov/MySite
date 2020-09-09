@@ -1,0 +1,175 @@
+/*header for about us*/
+body header {
+    position: static;
+}
+
+nav ul.navPages li {
+    color: black;
+}
+
+.bannerAboutUs {
+    width: 100%;
+    height: 23em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #A1ABB7;
+}
+
+.bannerAboutUs .tagline {
+    line-height: 270%;
+}
+
+.bannerAboutUs h1 {
+    font-size: 3em;
+}
+
+.bannerAboutUs p {
+    font-size: 1.2em;
+}
+
+/*banner with link to blog without backgroun image*/
+.bannerTours {
+    margin: 5em auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bannerTours img {
+    width: auto;
+    margin: 0em 1em;
+}
+
+.articleAboutUs {
+    width: 32em;
+    margin: 0em 1em;
+    text-align: left;
+}
+
+.bannerTours h2 {
+    font-size: 2.2em;
+    line-height: 100%;
+    margin-bottom: 0em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bannerTours p {
+    font-size: 0.83em;
+    color: #AAAAAA;
+    margin: 3.1em 0em 3.5em 0em;
+    line-height: 140%;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.articleAboutUs .buttonLink {
+    position: static;
+    margin: 0;
+}
+
+/*block our team with circle photos*/
+.ourTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 28em;
+    font-family: 'Lato', sans-serif;
+    background-color: #F8F8F8;
+    padding: 0em;
+    margin: 0em;
+    text-align: center;
+    line-height: 200%;
+}
+
+.ourTeam h2 {
+    font-size: 2.3em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin: 0em;
+    padding: 0em;
+}
+
+.ourTeam p {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #7A7A7A;
+    margin: 0.3em;
+    padding: 0em;
+}
+
+.teamMemberCards {
+    flex-direction: row;
+}
+
+.memberCard {
+    flex-direction: column;
+    line-height: 80%;
+    width: 30%;
+    margin: 1.5em auto;
+    line-height: 120%;
+}
+
+.memberCard img {
+    max-width: 6em;
+    border-radius: 50%;
+}
+
+.memberCard h3 {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.memberCard p {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.55em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.ourTeam .buttonLink {
+    position: static;
+    margin: 0 auto;
+}
+
+/*adaptability*/
+@media all and (min-width: 1101px) {
+    section.bannerAboutUs { background-image:url("../Pictures/background-21-1920x900.jpg");}
+}
+
+@media all and (max-width: 1100px) {
+    section.bannerAboutUs { background-image:url("../Pictures/background-21-1920x900-1280x640.jpg");}
+    .articleAboutUs {width: calc(100% - 2em); text-align: center;}
+    .articleAboutUs .buttonLink { margin: 0 auto;}
+    .bannerTours p {margin: 0.9em 0em 1.5em 0em;}
+    .bannerTours {margin: 2.5em auto;}
+}
+
+@media all and (max-width: 1000px) {
+    section.bannerAboutUs { background-image:url("../Pictures/background-21-1920x900-1024x480.jpg"); height: 12em;}
+}
+
+@media all and (max-width: 800px) {
+    .bannerTours { line-height: 160%;}
+    .bannerTours p { font-size: 0.93em; line-height: 170%;}
+    .bannerTours h2 { line-height: 110%;}
+    section.ourTeam { height: 52em;}
+    .teamMemberCards { flex-direction: column;}
+    .memberCard { width: 100%;}
+}
+
+@media all and (max-width: 750px) {
+    section.bannerAboutUs { background-image:url("../Pictures/background-21-1920x900-768x360.jpg");}
+}
+
+@media all and (max-width: 550px) {
+    .bannerTours img { width: calc(100% - 2em); margin: 0em 1em;}
+}

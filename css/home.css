@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Open+Sans:wght@300;400;700&display=swap');
 
 /*general*/
 * {
@@ -22,6 +22,18 @@ a {
 .itemCenter {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.itemCenterSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemCenterSpaceAround {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -127,9 +139,6 @@ a {
 
 .tagline {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     color: white;
     line-height: 350%;
@@ -145,7 +154,7 @@ a {
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    margin: -1em 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -205,7 +214,7 @@ ul.navPages li {
 
 /*burger menu*/
 .burgerMenu {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     position: fixed;
@@ -245,10 +254,11 @@ ul.navPages li {
     flex-direction: column;
     justify-content: center;
     height: 35em;
+    text-align: center;
 }
 
 .bestOffers h2 {
-    text-align: center;
+    /*text-align: center;*/
     text-transform: capitalize;
     font-size: 2.3em;
     font-weight: 400;
@@ -258,7 +268,7 @@ ul.navPages li {
 }
 
 .bestOffers p {
-    text-align: center;
+    /*text-align: center;*/
     font-size: 0.9em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -273,6 +283,7 @@ ul.navPages li {
     justify-content: space-between;
     padding-top: 3em;
     margin: 3em 0 3em 0;
+    text-align: left;
 }
 
 .picBestOffers figure {
@@ -402,9 +413,6 @@ img.cardOffer4 {
 
 /*block our achievements without backgtound image*/
 .achievements {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 18em;
     font-family: 'Lato', sans-serif;
     flex-wrap: wrap;
@@ -488,17 +496,14 @@ img.cardOffer4 {
     background: #CD5823;
 }
 
-/**/
-@media all and (min-width: 1101px)
-{
-    div.bannerTop {background-image:url("../Pictures/header-photo-big.jpg");}
+/*adaptability*/
+@media all and (min-width: 1101px) {
+    section.bannerTop {background-image:url("../Pictures/header-photo-big.jpg");}
     section.reasonsChoose {background-image:url("../Pictures/bg-121-1920x832.jpg");}
     section.findFlight { background-image:url("../Pictures/background-09-1920x900.jpg");}
 }
 
 @media all and (max-width: 1250px) {
-    
-    
     .searchBox form {width: 65%;}
     .picBestOffers {padding-left: 0.7em; padding-top: 2em; width: calc(100% - 0.7em);}
     .cardsReasons { padding: 2.5em 0.8em;}
@@ -512,14 +517,14 @@ img.cardOffer4 {
 }
 
 @media all and (max-width: 1100px) {
-    div.bannerTop {background-image:url('../Pictures/header-photo-medium.jpg');}
+    section.bannerTop {background-image:url('../Pictures/header-photo-medium.jpg');}
     section.reasonsChoose {background-image:url("../Pictures/bg-121-1170x650.jpg");}
     section.findFlight { background-image:url("../Pictures/background-09-1920x900-1280x640.jpg");}
     .bestOffers { height: 33em;}
 }
 
 @media all and (max-width: 1000px) {
-    div.bannerTop { height: 32em;}
+    section.bannerTop { height: 32em;}
     .cardsReasons { padding: 2.5em 0em;}
     .card1 { width: calc(50% - 1.6em);}
     .card2 {width: calc(100% - 1.6em);}
@@ -536,7 +541,7 @@ img.cardOffer4 {
 
 @media all and (max-width: 800px) {
     .searchBox form {width: calc(100% - 20px);}
-    div.bannerTop { height: 44em;}
+    section.bannerTop { height: 44em;}
     .searchBox {padding-top: 1em;}
     .bestOffers { height: 106em;}
     .picBestOffers {padding-top: 1em; flex-direction: column;}
@@ -554,23 +559,41 @@ img.cardOffer4 {
     .findFlight {height: 17em;}
     .containerFindFlight h2 { font-size: 2em;}
     .falseButton {margin-top: 2em;}
-    section.findFlight { background-image:url("../Pictures/background-09-1920x900-768x360.jpg");}
     .tagline {line-height: 400%;}
     .tagline p {line-height: 200%;}
     .headerNav {width: 38em;}
 }
 
+/*adaptability*/
+@media all and (max-width: 750px) {
+    section.findFlight { background-image:url("../Pictures/background-09-1920x900-768x360.jpg");}
+}
+
 @media all and (max-width: 600px) {
-    div.bannerTop {background-image:url('../Pictures/header-photo-small.jpg');}
+    section.bannerTop {background-image:url('../Pictures/header-photo-small.jpg');}
     section.reasonsChoose {background-image:url("../Pictures/bg-121-640x640.jpg");}
 }
 
+@media all and (min-width: 651px) {
+    .burgerMenu {display: none !important;}
+}
+
 @media all and (max-width: 650px) {
-    .headerNav ul.navPages { display: none;}
+    .headerNav ul.navPages { display: none; visibility: collapse;}
     .burgerMenu {display: flex;}
+    .headerNav {width: 100%;}
+}
+
+@media all and (max-width: 550px) {
+    .bestOffers {height: 102em;}
+}
+
+@media all and (max-width: 500px) {
+    .bestOffers {height: 96em;}
 }
 
 @media all and (max-width: 450px) {
+    .bestOffers {height: 86em;}
     .burgerNav { background-color: #572F59;}
     .burgerNav .navPages li { color: white; font-size: 1.5em; padding: 0.5em 1.7em; transition: 500ms;}
 }

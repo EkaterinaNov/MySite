@@ -6,6 +6,8 @@ function burgerMenuButtonClick(selector, defaultClass)
     var menu = document.querySelector('.' + selector);
     var menuButton = document.querySelector('.' + selector + ' ' + '.' + defaultClass);
 
+    //menuButton.
+
     if (menuButton.className === (defaultClass + nonActiveMenuIcon))
     {
         menuButton.className = defaultClass + activeMenuIcon;

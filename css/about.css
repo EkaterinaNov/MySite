@@ -1,4 +1,4 @@
-/*header for about us*/
+/*header for all but the home page*/
 body header {
     position: static;
 }
@@ -7,6 +7,7 @@ nav ul.navPages li {
     color: black;
 }
 
+/*block about us with background image*/
 .bannerAboutUs {
     width: 100%;
     height: 23em;

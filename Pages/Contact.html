@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/fontello.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8>
+    <link rel="shortcut icon" href="../Pictures/cropped-fav-32x32.png" type="image/x-icon">
+    <title>Tourizto</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  </head>
+  <body>
+
+    <header>
+        <nav class="headerNav">
+          <a href="Home.html">
+            <img src="../Pictures/logo.png" alt="Company\`s logo">
+          </a>
+          <ul class="navPages">
+            <li><a href="Home.html">home</a></li>
+            <li><a href="About.html">about</a></li>
+            <li><a href="Blog.html">blog</a></li>
+            <li><a href="Contact.html">contact</a></li>
+          </ul>
+        </nav>
+    </header>
+  
+        <div class="burgerMenu">
+          <button class="bannerTopButton icon-menu" onclick="burgerMenuButtonClick('burgerMenu', 'bannerTopButton')"></button>
+          <nav class="burgerNav">
+            <ul class="navPages">
+              <li><a href="Home.html">home</a></li>
+              <li><a href="About.html">about</a></li>
+              <li><a href="Blog.html">blog</a></li>
+              <li><a href="Contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <script src="../JS/burgerMenu.js"></script>
+
+        <section class="bannerContactUs">
+            <div class="brightnessFilter">
+                <div class="tagline text-shadow itemCenter">
+                    <h1>Contact Us</h1>
+                    <p>Let`s keep in touch!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mainTextInfo mainWidth itemCenterSpaceBetween">
+            <div class="contactOurAgency partMainTextInfo">
+                <h3>Contact Our Agency</h3>
+                <p>
+                    At Tourizto we want to make sure that your trip is everything you could possibly dream of. 
+                    Whether you want inspiration and guidance in planning your next adventure or need help with an existing booking, our travel experts are here to help.
+                </p>
+                <p>
+                    Send us an email or give our team a call to book your flights, plan your adventure or get help with any problems you encounter along the way. 
+                    Or if you’re in New York, you can visit us in store to speak face to face. Our assistance doesn’t end when you take off either. 
+                    Our Global Travel Help team are on hand to assist with any issues you may have.
+                </p>
+            </div>
+
+            <div class="ourContacts partMainTextInfo">
+                <h3>our contacts</h3>
+                <div>
+                  <p class="icon-location-1"></p>
+                  <p><a href="">732/21 Second street, manchester, King Street, Kingston United Kingdom</a></p>
+                </div>
+                <div>
+                  <p class="icon-phone"></p>
+                  <p><a href="">345-677-554</a></p>
+                </div>
+                <div>
+                  <p class="icon-fax"></p>
+                  <p><a href="">323-678-567</a></p>
+                </div>
+                <div>
+                  <p class="icon-mail"></p>
+                  <p><a href="">323-678-567</a></p>
+                </div>
+                <div>
+                  <p class="icon-telegram"></p>
+                  <p><a href="">info@demolink.org</a></p>
+                </div>
+            </div>
+            
+            <div class="askQuestion partMainTextInfo">
+                <h3>Any Questions?</h3>
+                <form name="messageForm" action="http://fe.it-academy.by/TestForm.php">
+                  <input class="styleFormField" type="text" name="customerName" placeholder="Your name">
+                  <input class="styleFormField" type="text" name="customerEmail" placeholder="Email">
+                  <textarea class="styleFormField" name="customerMessage" placeholder="Message"></textarea>
+                  <input class="buttonLink" type='submit' value='send message'>
+                </form>
+                <script src="../JS/sendMessage.js"></script>
+            </div>
+        </section>
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75252.67256813997!2d27.523329137631812!3d53.88472079821034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1600105061807!5m2!1sru!2sby" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+    </body>
+</html>

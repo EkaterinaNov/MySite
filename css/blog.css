@@ -7,7 +7,7 @@ nav ul.navPages li {
     color: black;
 }
 
-/**/
+/*main block and general*/
 .recordsAndMenu {
     flex-direction: row;
     align-items: flex-start;
@@ -24,26 +24,6 @@ nav ul.navPages li {
     flex-basis: 7em;
     flex-direction: column;
     flex-grow: 1;
-}
-
-div.searchBox form {
-    width: 100%;
-    position: static;
-    justify-content: space-between;
-}
-
-div.searchBox form input {
-    position: static;
-    display: inline-block;
-}
-
-div.searchBox form .bannerTopButton {
-    position: static;
-    display: inline-block;
-}
-
-div.searchBox form .bannerTopButton:hover {
-    filter: opacity(85%);
 }
 
 .bottomBorder {
@@ -67,6 +47,7 @@ div.searchBox form .bannerTopButton:hover {
     border-bottom: none;
 }
 
+/*records block*/
 .recordInBlog h3{
     font-family: 'Open Sans', sans-serif;;
     font-weight: 600;
@@ -132,6 +113,27 @@ div.buttonLink {
     background-color: #572F59;
 }
 
+/*sidebar search form*/
+div.searchBox form {
+    width: 100%;
+    position: static;
+    justify-content: space-between;
+}
+
+div.searchBox form input {
+    position: static;
+    display: inline-block;
+}
+
+div.searchBox form .bannerTopButton {
+    position: static;
+    display: inline-block;
+}
+
+div.searchBox form .bannerTopButton:hover {
+    filter: opacity(85%);
+}
+
 /*sidebar menu*/
 .rightNavMenu h3{
     text-transform: uppercase;
@@ -156,6 +158,7 @@ div.buttonLink {
     margin: 0.8em 0em;
 }
 
+/*adaptability*/
 @media all and (max-width: 1200px) {
     .sidebar { flex-basis: 5em; margin-right: 1em;}
     .recordsBlock { margin-left: 1em;}

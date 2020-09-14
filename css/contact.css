@@ -1,0 +1,179 @@
+/*header for all but the home page*/
+body header {
+    position: static;
+}
+
+nav ul.navPages li {
+    color: black;
+}
+
+/*banner contact us with background image*/
+.bannerContactUs {
+    width: 100%;
+    height: 19em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #425055;
+}
+
+.bannerContactUs .tagline {
+    line-height: 270%;
+}
+
+.bannerContactUs h1 {
+    font-size: 3em;
+}
+
+.bannerContactUs p {
+    font-size: 1.2em;
+}
+
+/*main block with contacts*/
+.mainTextInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+
+.mainTextInfo h3 {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 1.5em 0em 0.8em 0em;
+    color: black;
+    text-transform: capitalize;
+}
+
+.partMainTextInfo {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 30%;
+    /*flex-basis: 7em;*/
+    margin: 0em 0.5em;
+}
+
+.partMainTextInfo:nth-child(even) {
+    /*flex-basis: 5em;*/
+    width: 25%;
+}
+
+.partMainTextInfo:first-child {
+    margin-right: 3.5em;
+}
+
+.contactOurAgency p {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0em;
+    padding: 0em;
+    color: #AAAAAA;
+    line-height: 170%;
+}
+
+.ourContacts p {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    margin: 0.5em 0em;
+    padding: 0em;
+    color: #AAAAAA;
+    line-height: 130%;
+    display: inline-block;
+    text-indent: -0.7em;
+}
+
+.ourContacts div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 0.8em;
+}
+
+.ourContacts a {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0em 0.8em;
+    padding: 0em;
+    color: #54595F;
+}
+
+.ourContacts a:first-child {
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.ourContacts a:hover {
+    color: black;
+}
+
+.styleFormField {
+    width: 100%;
+    border-radius: 1.5em;
+    border: 0.1em solid #EBECED;
+    margin: 0.5em 0em;
+    padding: 0.5em 1em;
+    color: #60606B;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+.askQuestion input {
+    height: 2.5em;
+}
+
+.askQuestion textarea {
+    height: 13em;
+    resize: vertical;
+}
+
+.askQuestion .buttonLink {
+    position: static;
+    width: fit-content;
+    height: 3.6em;
+}
+
+.map{
+    overflow: hidden;
+    padding-bottom: 23%;
+    position: relative;
+    height: 24em;
+}
+.map iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+@media all and (min-width: 1101px) {
+    section.bannerContactUs { background-image:url("../Pictures/background-27-1920x900-1920x900.jpg");}
+}
+
+@media all and (max-width: 1200px) {
+    .mainTextInfo { margin: 0em 1em 3em 1em; width: calc(100% - 2em);}
+}
+
+@media all and (max-width: 1100px) {
+    section.bannerContactUs { background-image:url("../Pictures/background-27-1920x900-1280x640.jpg");}
+}
+
+@media all and (max-width: 1000px) {
+    section.bannerContactUs { background-image:url("../Pictures/background-27-1920x900-1024x480.jpg"); height: 11em;}
+    .mainTextInfo .partMainTextInfo:first-child { width: 100%; margin: 0em;}
+    .partMainTextInfo:not(:first-child) {width: 50%; margin: 0em;}
+}
+
+@media all and (max-width: 750px) {
+    section.bannerContactUs { background-image:url("../Pictures/background-27-1920x900-768x360.jpg");}
+    .mainTextInfo .partMainTextInfo { width: 100%; margin: 0em;}
+    .mainTextInfo { flex-direction: column;}
+}

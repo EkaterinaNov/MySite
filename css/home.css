@@ -14,6 +14,30 @@ a {
     color: inherit;
 }
 
+input {
+    border: 0.1em solid #EBECED;
+    color: #3F4146;
+    height: 2.3em;
+}
+
+textarea {
+    height: 13em;
+    resize: vertical;
+}
+
+.styleFormField {
+    width: 100%;
+    border-radius: 1.5em;
+    border: 0.1em solid #EBECED;
+    margin: 0.5em 0em;
+    padding: 0.5em 1em;
+    color: #60606B;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
 .mainWidth {
     width: 73em;
     margin: 0 auto;
@@ -43,6 +67,12 @@ a {
     align-content: center;
 }
 
+.contentStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /*top block with image*/
 /*search form*/
 .searchBox {
@@ -60,13 +90,10 @@ a {
     top: 0;
     left: 0;
     width: calc(100% - 2.9em);
-    height: 2.3em;
     padding-left: 10px;
-    border: 0.1em solid #EBECED;
     border-radius: 0.3em;
     outline: none;
     background: #FFFFFF;
-    color: #3F4146;
     font-size: 1em;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;

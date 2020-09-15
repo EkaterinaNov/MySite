@@ -27,7 +27,7 @@ nav ul.navPages li {
 }
 
 .bottomBorder {
-    padding: 3em 0em 2.2em 0em;
+    padding: 2.5em 0em 2.5em 0em;
     border-bottom: 0.05em solid #EBECED;
 }
 
@@ -56,18 +56,30 @@ nav ul.navPages li {
     margin: 0;
 }
 
+.recordInBlog .postTitle {
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 2.4em;
+    color: black;
+    margin: 0;
+}
+
 .postInfo p {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;;
     font-weight: 300;
     font-size: 0.9em;
-    color: #3B3D42;
+    color: #54595F;
     margin-right: 0.5em;
 }
 
-.postPoster img {
+.postPosterFirst, .postPosterSecond, .postPosterThird {
     border-radius: 0.3em;
-    width: 100%;
+    width: auto;
+}
+
+.recordIllustration {
+    width: auto;
 }
 
 .textPreview {
@@ -111,6 +123,90 @@ div.buttonLink {
 .linkMore:hover {
     filter: opacity(85%);
     background-color: #572F59;
+}
+
+.postAuthorPreviewCard div {
+    display: inline-block;
+}
+
+.postAuthorPreviewCard a {
+    text-transform: uppercase;
+    color: #572F59;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.postAuthorPreviewCard a:hover {
+    color: black;
+    transition: 500ms;
+}
+
+.icon-user-circle {
+    margin: 0em;
+    font-size: 9em;
+    color: #C5C5C5;
+}
+
+.previousRecordLinks {
+    flex-direction: row;
+}
+
+.fastTextLinks {
+    margin: 0em 1em;
+}
+
+.firstFastLink {
+    text-transform: uppercase;
+    color: #572F59;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 700;
+    font-size: 0.7em;
+}
+
+.firstFastLink:hover {
+    color: black;
+}
+
+.firstFastLink, .secondFastLink {
+    display: block;
+}
+
+.secondFastLink {
+    color: black;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.secondFastLink:hover {
+    color: #572F59;
+}
+
+.simbolLink {
+    color: #572F59;
+}
+
+.simbolLink:hover {
+    color: black;
+}
+
+#comments h4 {
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
+
+#comments p {
+    color: #3B3D42;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+form.commentsForm>textarea.styleFormField {
+    margin-bottom: 2em;
 }
 
 /*sidebar search form*/
@@ -159,6 +255,13 @@ div.searchBox form .bannerTopButton:hover {
 }
 
 /*adaptability*/
+@media all and (min-width: 1101px) {
+    .postPosterFirst { content: url("../Pictures/background-02-1920x900-768x360.jpg");}
+    .postPosterSecond { content: url("../Pictures/background-23-1920x900-660x371.jpg");}
+    .postPosterThird { content: url("../Pictures/background-38-1920x900-660x371.jpg");}
+    .recordIllustration { content: url("../Pictures/background-40-660x381.jpg");}
+}
+
 @media all and (max-width: 1200px) {
     .sidebar { flex-basis: 5em; margin-right: 1em;}
     .recordsBlock { margin-left: 1em;}
@@ -168,6 +271,10 @@ div.searchBox form .bannerTopButton:hover {
     .sidebar { flex-basis: 3em; margin-right: 1em;}
     .recordsBlock { margin-left: 1em;}
     .mainWidth { width: 54em;}
+    .postPosterFirst { content: url("../Pictures/background-02-1920x900-600x281.jpg"); width: 100%;}
+    .postPosterSecond { content: url("../Pictures/background-23-1920x900-660x371-600x337.jpg"); width: 100%;}
+    .postPosterThird { content: url("../Pictures/background-38-1920x900-660x371-600x337.jpg"); width: 100%;}
+    .recordIllustration { width: 100%;}
 }
 
 @media all and (max-width: 950px) {

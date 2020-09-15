@@ -111,32 +111,16 @@ nav ul.navPages li {
     color: black;
 }
 
-.styleFormField {
-    width: 100%;
-    border-radius: 1.5em;
-    border: 0.1em solid #EBECED;
-    margin: 0.5em 0em;
-    padding: 0.5em 1em;
-    color: #60606B;
-    font-size: 1em;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
-    outline: none;
-}
-
-.askQuestion input {
-    height: 2.5em;
-}
-
-.askQuestion textarea {
+/*.askQuestion textarea {
     height: 13em;
     resize: vertical;
-}
+}*/
 
 .askQuestion .buttonLink {
     position: static;
     width: fit-content;
     height: 3.6em;
+    margin-top: 1em;
 }
 
 .map{

@@ -27,7 +27,6 @@ textarea {
 
 .styleFormField {
     width: 100%;
-    border-radius: 1.5em;
     border: 0.1em solid #EBECED;
     margin: 0.5em 0em;
     padding: 0.5em 1em;
@@ -70,6 +69,12 @@ textarea {
 .contentStart {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.contentEnd {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 

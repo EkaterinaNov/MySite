@@ -16,19 +16,19 @@ function validateMessageForm() {
     var falseAnswer = -1;
 
     if (customerNameValue.length > 30) {
-        alert('Please enter a name no longer than 30 characters!');
+        alert('Please enter a name no longer than 30 characters');
         customerNameElement.focus();
         return false;
     }
 
     if (customerEmailValue.indexOf(mandatoryInMailFirst) === falseAnswer) {
-        alert('Please enter correct email!');
+        alert('Please enter correct email');
         customerEmailElement.focus();
         return false;
     }
 
     else if (customerEmailValue.indexOf(mandatoryInMailSecond) === falseAnswer) {
-        alert('Please enter correct email!');
+        alert('Please enter correct email');
         customerEmailElement.focus();
         return false;
     }

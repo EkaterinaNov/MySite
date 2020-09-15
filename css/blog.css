@@ -78,7 +78,7 @@ nav ul.navPages li {
     width: auto;
 }
 
-.recordIllustration {
+.recordIllustrationFirst, .recordIllustrationSecond, .recordIllustrationThird {
     width: auto;
 }
 
@@ -152,6 +152,10 @@ div.buttonLink {
     flex-direction: row;
 }
 
+.nextRecordLinks {
+    flex-direction: row;
+}
+
 .fastTextLinks {
     margin: 0em 1em;
 }
@@ -191,6 +195,10 @@ div.buttonLink {
     color: black;
 }
 
+#comments {
+    margin-bottom: 2em;
+}
+
 #comments h4 {
     font-family: 'Open Sans', sans-serif;;
     font-weight: 400;
@@ -205,8 +213,28 @@ div.buttonLink {
     font-size: 0.9em;
 }
 
-form.commentsForm>textarea.styleFormField {
+div#comments form  textarea {
     margin-bottom: 2em;
+}
+
+textarea {
+    border-radius: 1.5em;
+}
+
+input {
+    border-radius: 0.3em;
+}
+
+#comments .buttonLink {
+    position: static;
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 0.3em;
+}
+
+#comments .buttonLink:hover {
+    background: #572F59;
+    opacity: 85%;
 }
 
 /*sidebar search form*/
@@ -259,7 +287,9 @@ div.searchBox form .bannerTopButton:hover {
     .postPosterFirst { content: url("../Pictures/background-02-1920x900-768x360.jpg");}
     .postPosterSecond { content: url("../Pictures/background-23-1920x900-660x371.jpg");}
     .postPosterThird { content: url("../Pictures/background-38-1920x900-660x371.jpg");}
-    .recordIllustration { content: url("../Pictures/background-40-660x381.jpg");}
+    .recordIllustrationFirst { content: url("../Pictures/background-40-660x381.jpg");}
+    .recordIllustrationSecond { content: url("../Pictures/background-39-660x374-1.jpg");}
+    .recordIllustrationThird { content: url("../Pictures/background-02-1920x900-768x360.jpg");}
 }
 
 @media all and (max-width: 1200px) {
@@ -274,7 +304,9 @@ div.searchBox form .bannerTopButton:hover {
     .postPosterFirst { content: url("../Pictures/background-02-1920x900-600x281.jpg"); width: 100%;}
     .postPosterSecond { content: url("../Pictures/background-23-1920x900-660x371-600x337.jpg"); width: 100%;}
     .postPosterThird { content: url("../Pictures/background-38-1920x900-660x371-600x337.jpg"); width: 100%;}
-    .recordIllustration { width: 100%;}
+    .recordIllustrationFirst { content: url("../Pictures/background-40-600x346.jpg"); width: 100%;}
+    .recordIllustrationSecond { content: url("../Pictures/background-39-600x340-1.jpg"); width: 100%;}
+    .recordIllustrationThird { content: url("../Pictures/background-02-1920x900-768x360.jpg");}
 }
 
 @media all and (max-width: 950px) {
@@ -287,4 +319,13 @@ div.searchBox form .bannerTopButton:hover {
 @media all and (max-width: 700px) {
     .mainWidth { width: calc(100% - 2em);}
     .recordsAndMenu { margin: 0em 1em;}
+}
+
+@media all and (max-width: 600px) {
+    .postPosterFirst { content: url("../Pictures/background-02-1920x900-500x234.jpg");}
+    .postPosterSecond { content: url("../Pictures/background-23-1920x900-500x281.jpg");}
+    .postPosterThird { content: url("../Pictures/background-38-1920x900-500x281.jpg");}
+    .recordIllustrationFirst { content: url("../Pictures/background-40-500x288.jpg");}
+    .recordIllustrationSecond { content: url("../Pictures/background-39-500x283-1.jpg");}
+    .recordIllustrationThird { content: url("../Pictures/background-02-1920x900-600x281.jpg");}
 }

@@ -51,12 +51,10 @@ nav ul.navPages li {
     flex-grow: 1;
     flex-shrink: 1;
     width: 30%;
-    /*flex-basis: 7em;*/
     margin: 0em 0.5em;
 }
 
 .partMainTextInfo:nth-child(even) {
-    /*flex-basis: 5em;*/
     width: 25%;
 }
 
@@ -111,16 +109,14 @@ nav ul.navPages li {
     color: black;
 }
 
-/*.askQuestion textarea {
-    height: 13em;
-    resize: vertical;
-}*/
-
 .askQuestion .buttonLink {
     position: static;
     width: fit-content;
-    height: 3.6em;
     margin-top: 1em;
+}
+
+.styleFormField {
+    border-radius: 1.5em;
 }
 
 .map{

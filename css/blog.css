@@ -64,13 +64,18 @@ nav ul.navPages li {
     margin: 0;
 }
 
+.postInfo {
+    margin: 1.2em auto;
+}
+
 .postInfo p {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;;
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: #54595F;
     margin-right: 0.5em;
+    margin: 0em 0.5em 0em 0em;
 }
 
 .postPosterFirst, .postPosterSecond, .postPosterThird {

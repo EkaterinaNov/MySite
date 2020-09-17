@@ -477,7 +477,6 @@ img.cardOffer4 {
     flex-direction: column;
     line-height: 2em;
     width: fit-content;
-    animation-name: appearanceOnLeft;
     animation-duration: 2s;
 }
 

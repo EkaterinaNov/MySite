@@ -7,6 +7,7 @@
 
 body {
     margin: 0em;
+    max-width: 1920px;
 }
 
 a {
@@ -35,6 +36,27 @@ textarea {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     outline: none;
+}
+
+.bannerTopButton {
+    position: absolute; 
+    top: 0.1em;
+    right: 0;
+    width: 2.7em;
+    height: 2.7em;
+    border: none;
+    background: #572F59;
+    border-radius: 0.3em;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.bannerTopButton:hover {
+    filter: brightness(150%);
+}
+
+.bannerTopButton:active, .bannerTopButton:focus {
+    outline: none !important;
 }
 
 .mainWidth {
@@ -78,6 +100,26 @@ textarea {
     align-items: center;
 }
 
+div.idTop {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    opacity: 0.4;
+    z-index: 9999;
+    width: 2em;
+    height: 2em;
+    border: none;
+    background: #572F59;
+    border-radius: 0.3em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 150%;
+}
+
+div.idTop:hover {
+    opacity: 1;
+}
+
 /*top block with image*/
 /*search form*/
 .searchBox {
@@ -102,27 +144,6 @@ textarea {
     font-size: 1em;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-}
-
-.bannerTopButton {
-    position: absolute; 
-    top: 0.1em;
-    right: 0;
-    width: 2.7em;
-    height: 2.7em;
-    border: none;
-    background: #572F59;
-    border-radius: 0.3em;
-    cursor: pointer;
-    color: #FFFFFF;
-}
-
-.bannerTopButton:hover {
-    filter: brightness(150%);
-}
-
-.bannerTopButton:active, .bannerTopButton:focus {
-    outline: none !important;
 }
 
  /*decorate background image*/
@@ -448,10 +469,16 @@ img.cardOffer4 {
     flex-wrap: wrap;
 }
 
+@keyframes appearanceOnLeft {
+    0% {transform: translateX(-2000px);}
+}
+
 .achievementsCard {
     flex-direction: column;
     line-height: 2em;
     width: fit-content;
+    animation-name: appearanceOnLeft;
+    animation-duration: 2s;
 }
 
 .achievementsCard img {
@@ -606,7 +633,7 @@ img.cardOffer4 {
 }
 
 @media all and (min-width: 651px) {
-    .burgerMenu {display: none !important;}
+    .burgerMenu {display: none !important;  right: -16em !important; width: 16em !important;}
 }
 
 @media all and (max-width: 650px) {

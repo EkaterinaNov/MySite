@@ -348,6 +348,16 @@ ul.navPages li {
     box-shadow: 0 0.4em 0.6em 0.09em rgba(0, 0, 0, 0.15);
 }
 
+.picBestOffers figure img:hover {
+    animation: zoom 2s;
+}
+
+@keyframes zoom {
+    from { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    to { transform: scale(1); }
+}
+
 .picBestOffers figcaption {
     padding-left: 2em;
     font-family: 'Lato', sans-serif;
